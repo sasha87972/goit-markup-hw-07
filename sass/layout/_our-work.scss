@@ -13,8 +13,6 @@
   bottom: 0;
   width: 100%;
   height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex;
   background-color: var(--overlay-bgd);
 }

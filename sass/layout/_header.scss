@@ -29,11 +29,7 @@
 }
 .site-nav__link {
   display: inline-block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--black-text);
+  @include font(500, 14px, 1.14, 0.02em, var(--black-text));
   padding: 30px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
@@ -59,17 +55,15 @@
   margin-left: auto;
   align-items: center;
 }
-.contacts-list__item:not(:last-child) {
-  margin-right: 50px;
+.contacts-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .contacts-list__link {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--grey-text);
+  @include font(500, 14px, 1.14, 0.02em, var(--grey-text));
   padding: 30px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

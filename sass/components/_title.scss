@@ -1,9 +1,6 @@
 .title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.19;
+  @include font-no-ls(bold, 14px, 1.19, var(--black-text));
   text-align: center;
-  color: var(--black-text);
   text-align: left;
   text-transform: uppercase;
 }

@@ -26,15 +26,12 @@
 .adress-list__link_color_transparent {
   color: var(--white-rgba);
 }
-.footer__title {
+.footer-social__title,
+.footer-form__title {
   display: inline-block;
+  @include font(bold, 14px, 1.14, 0.03em, var(--white-text));
   padding-top: 12px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-text);
 }
 .footer__social-list {
   margin-top: 20px;
@@ -65,11 +62,7 @@
     border-color: var(--white-text);
   }
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
+    @include font-normal(16px, 1.25, 0.03em, var(--white-rgba));
     align-items: center;
-    letter-spacing: 0.03em;
-    color: var(--white-rgba);
   }
 }

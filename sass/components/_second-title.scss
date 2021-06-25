@@ -1,8 +1,5 @@
 .second-title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.7;
-    text-align: center;
-    color: var(--black-text);
-    margin-bottom: 50px;
-  }
+  @include font-no-ls(bold, 36px, 1.7, var(--black-text));
+  text-align: center;
+  margin-bottom: 50px;
+}
