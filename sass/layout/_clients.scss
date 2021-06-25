@@ -1,0 +1,31 @@
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+}
+.clients-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-grey);
+  border-radius: 4px;
+  color: var(--icon-grey);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--blue-clr);
+    color: var(--blue-clr);
+  }
+}
+.clients-list__icon {
+  fill: currentColor;
+}
