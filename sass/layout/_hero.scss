@@ -16,13 +16,13 @@
   text-align: center;
 }
 
-.hero__main-title {
+.hero__title {
   width: 700px;
   @include font(900, 44px, 1.36, 0.06em, var(--white-text));
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
 }
-.hero__accent-button {
+.hero__button {
   margin: 30px auto 0;
 }

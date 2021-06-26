@@ -1,14 +1,14 @@
-.clients-list {
+.clients__list {
   display: flex;
   margin-top: 50px;
 }
-.clients-list__item {
+.clients__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.clients-list__link {
+.clients__link {
   @extend %flex;
   width: 170px;
   height: 92px;
@@ -24,6 +24,6 @@
     color: var(--blue-clr);
   }
 }
-.clients-list__icon {
+.clients__icon {
   fill: currentColor;
 }

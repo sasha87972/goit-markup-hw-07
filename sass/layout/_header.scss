@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
 }
-.site-nav__menu {
+.site-nav__list {
   display: flex;
   margin-left: 93px;
 }
@@ -49,30 +49,4 @@
     border-radius: 2px;
     background-color: var(--blue-clr);
   }
-}
-.contacts-list {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
-.contacts-list__item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-.contacts-list__link {
-  display: flex;
-  align-items: center;
-  @include font(500, 14px, 1.14, 0.02em, var(--grey-text));
-  padding: 30px 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus,
-  &:hover {
-    color: var(--blue-clr);
-  }
-}
-.contacts-list__icon {
-  fill: currentColor;
-  margin-right: 10px;
 }

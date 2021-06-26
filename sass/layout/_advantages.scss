@@ -1,15 +1,16 @@
-.advantages-list__section {
+.advantages {
   padding: 94px 0 0 0;
 }
-.advantages-list {
+
+.advantages__list {
   display: flex;
   justify-content: space-between;
 }
-.advantages-list__item {
+.advantages__item {
   width: 270px;
   text-align: left;
 }
-.advantages-list__icon {
+.advantages__icon {
   @extend %flex;
   width: 270px;
   height: 120px;
@@ -18,7 +19,7 @@
   margin-bottom: 30px;
 }
 
-.advantages-list__text {
+.advantages__text {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 10px;
